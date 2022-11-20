@@ -1,0 +1,40 @@
+%dragdrop {
+    &__area {
+
+        &__legend {}
+    }
+
+    &__item {
+
+        &::before {}
+
+        strong {}
+
+    }
+
+    &__edit {}
+
+    &__delete {}
+
+    &__group {
+
+        &:hover {}
+
+        &__legend {}
+    }
+
+    &__operator {
+
+        &--or {}
+
+        &--and {}
+
+    }
+
+    &__legend {
+
+        &::after {}
+    }
+
+    &__field {}
+}

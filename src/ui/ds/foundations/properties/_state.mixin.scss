@@ -1,0 +1,7 @@
+
+//STATES
+@mixin states($state) {
+    &#{if($state!=resting, ':' + $state,'')} {
+        @content;
+    }
+}

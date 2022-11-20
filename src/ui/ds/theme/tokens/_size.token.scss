@@ -1,0 +1,41 @@
+:root {
+ 
+// GRID
+    --padding-xs: 1.6rem;
+    --padding-md: 3.6rem;
+
+
+// OBJECTS
+    --field-w-md: 16rem;
+    --field-h-md: 3.6rem;
+        
+    --button-w-md: 8.6rem;
+    --button-h-md: 3.6rem;
+
+
+// TEXT
+    --text-xl: 4rem;
+    @include mq() {
+        --text-xl: 2.2rem;
+    }
+
+    --text-l: 2.4rem;
+    @include mq() {
+        --text-l: 2.4rem;
+    }
+
+    --text-m: 1.6rem;
+    @include mq() {
+        --text-m: 1.6rem;
+    }
+
+    --text-s: 1.4rem;
+    @include mq() {
+        --text-s: 1.4rem;
+    }
+
+    --text-xs: 1.2rem;
+    @include mq() {
+        --text-xs: 1.2rem;
+    }
+}

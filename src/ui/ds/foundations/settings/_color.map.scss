@@ -1,0 +1,52 @@
+/* -----------------------------------
+   SETTINGS - COLOR MAP
+----------------------------------- */
+
+
+$color:(
+
+// LIGHT
+
+    light: (
+        primary: $color-primary,
+        secondary: $color-secondary,
+        tertiary: $color-tertiary,
+
+        background-000: $color-lightest, 
+        background-900: $color-darkest, 
+
+        content-000: $color-lightest,
+        content-100: $color-lighter,
+        content-300: $color-light,
+        content-500: $color-dark,
+        content-700: $color-darker,
+        content-900: $color-darkest,
+
+        warning: $color-warning,
+        danger: $color-danger,
+        safe: $color-safe,
+    ),
+
+
+// DARK
+
+    dark: (
+        primary: $color-primary,
+        secondary: $color-secondary,
+        tertiary: $color-tertiary,
+
+        background-000: $color-dark, 
+        background-900: $color-light, 
+
+        content-000: $color-darkest,
+        content-100: $color-darker,
+        content-300: $color-dark,
+        content-500: $color-light,
+        content-700: $color-lighter,
+        content-900: $color-lightest,
+
+        warning: $color-warning,
+        danger: $color-danger,
+        safe: $color-safe,
+    )
+)

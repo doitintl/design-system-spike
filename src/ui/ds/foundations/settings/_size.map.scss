@@ -1,0 +1,48 @@
+// BREAKPOINTS
+$bp: (
+    "desktop": 1920px,
+    "laptop": 1366px,
+    "landscape": 1024px,
+    "portrait": 768px,
+    "mobile": 360px,
+) !default;
+
+$default-bp: (
+    //Mobile
+    "s": (
+        "min-width": "0",
+        "max-width": "portrait",
+    ),
+    //Tablet
+    "m": (
+        "min-width": "portrait",
+        "max-width": "landscape",
+    ),
+    //Desk
+    "l": (
+        "min-width": "landscape",
+        "max-width": "desktop",
+    ),
+    //Large
+    "xl": (
+        "min-width": "desktop",
+        "max-width": "none",
+    ),
+
+    //Mobile & Tablet
+    "s-m": (
+        "min-width": "0",
+        "max-width": "landscape",
+    ),
+    //Desk & Large
+    "l-xl": (
+        "min-width": "desktop",
+        "max-width": "none",
+    ),
+    //Tablet & Large
+    "m-xl": (
+        "min-width": "landscape",
+        "max-width": "none",
+    ),
+) !default;
+

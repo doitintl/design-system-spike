@@ -1,0 +1,58 @@
+
+// MEDIA QUERIES
+/*
+@include mq(); //Default mobile query
+@include mq(m); //Default queries, values -> "s":mobile, "m": tablet, "l": desk, "xl": large screen
+@include mq(s-m); //Default combined queries values -> "s-m": mobile & tablet, "l-xl": desk & large screen
+@include mq("0", "landscape"); //Custom queries width min-width/max-with values -> "0", "mobile", "portrait", "landscape", "desktop", "large-screen", "none"
+*/
+@mixin mq($bp-min: map-get(map-get($default-bp, "s"), "min-width"),
+    $bp-max: map-get(map-get($default-bp, "s"), "max-width")) {
+    @if ($bp-min=="m") {
+        $bp-min: map-get(map-get($default-bp, "m"), "min-width");
+        $bp-max: map-get(map-get($default-bp, "m"), "max-width");
+    }
+
+    @if ($bp-min=="l") {
+        $bp-min: map-get(map-get($default-bp, "l"), "min-width");
+        $bp-max: map-get(map-get($default-bp, "l"), "max-width");
+    }
+
+    @if ($bp-min=="xl") {
+        $bp-min: map-get(map-get($default-bp, "xl"), "min-width");
+        $bp-max: map-get(map-get($default-bp, "xl"), "max-width");
+    }
+
+    @if ($bp-min=="s-m") {
+        $bp-min: map-get(map-get($default-bp, "s-m"), "min-width");
+        $bp-max: map-get(map-get($default-bp, "s-m"), "max-width");
+    }
+
+    @if ($bp-min=="l-xl") {
+        $bp-min: map-get(map-get($default-bp, "l-xl"), "min-width");
+        $bp-max: map-get(map-get($default-bp, "l-xl"), "max-width");
+    }
+
+    @if ($bp-min=="m-xl") {
+        $bp-min: map-get(map-get($default-bp, "m-xl"), "min-width");
+        $bp-max: map-get(map-get($default-bp, "m-xl"), "max-width");
+    }
+
+    @if ($bp-max =="none") {
+        @media (min-width: bp($bp-min)) {
+            @content;
+        }
+    }
+
+    @else if ($bp-min =="zero" or $bp-min =="0px" or $bp-min =="0") {
+        @media (max-width: #{bp($bp-max) - 1}) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: #{bp($bp-min) or 0px}) and (max-width: #{bp($bp-max) - 1}) {
+            @content;
+        }
+    }
+}

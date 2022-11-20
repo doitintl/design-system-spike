@@ -1,0 +1,25 @@
+// -------------------------------
+// TYPO - MAP
+// -------------------------------
+
+$typo: (
+    'titles': (
+      'family': $typo-titles,
+      'weight': (
+        'regular': 400,
+      ),
+    ),
+    'contents': (
+      'family': $typo-content,
+      'weight': (
+        'medium': 500,
+        'bold': 700,
+      ),
+    ),
+    'icons': (
+      'family': $typo-icons,
+      'weight': (
+        'normal': normal,
+      ),
+    ),
+  );

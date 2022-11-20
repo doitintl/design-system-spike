@@ -1,0 +1,18 @@
+//STATES
+@mixin order($type) {
+    @if $type=='actions' {
+        @each $place in $order-actions {
+            &--#{$place} {
+                @content;
+            }
+        }
+    }
+
+    @else if $type=='headings' {
+        @each $place in $order-headings {
+            &--#{$place} {
+                @content;
+            }
+        }
+    }
+}

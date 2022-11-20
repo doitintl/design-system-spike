@@ -1,0 +1,16 @@
+
+// ICONS
+// @include icon(a, b);
+// a: name of the icon as it appears in icon map -> "arrow-up", "bag", etc...
+// b: position of pseudo-element -> "before", "after"
+@mixin icon($icon, $place: "before") {
+    &:#{unquote($place)} {
+        font-family: var(--font-icon-family);
+        font-weight: var(--font-icon-weight) !important;
+
+        @if ($icon) {
+            content: icon($icon);
+        }
+    }
+}
+

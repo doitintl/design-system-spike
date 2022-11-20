@@ -1,0 +1,16 @@
+
+// BORDERS
+// @include border();
+// @include border("top");
+// @include border($color: var(--color-warning))
+@mixin border($position: "all", $color: var(--color-primary), $size: 0.1rem, $style: solid) {
+    $value: $size $style $color;
+
+    @if ($position =="all") {
+        border: $value;
+    }
+
+    @else {
+        border-#{$position}: $value;
+    }
+}

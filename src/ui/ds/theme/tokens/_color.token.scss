@@ -1,0 +1,34 @@
+:root {
+
+// LIGHT
+    &:not(.dark) {
+        --color-primary: #3B40B5;
+        --color-primary-600: #292D7F;
+
+        --color-secondary: transparent;
+        --color-secondary-600: #F0F0F9;
+
+        --color-tertiary: transparent;
+        --color-tertiary-600: #F0F0F9;
+
+
+        // Buttons
+        --color-button-primary-resting: var(--color-primary);
+        --color-button-primary-focus: var(--color-primary-600);
+        --color-button-primary-hover: var(--color-primary-600);
+        --color-button-primary-active: var(--color-primary-600);
+        --color-button-primary-visited: var(--color-primary-600);
+
+        --color-button-secondary-resting: var(--color-secondary);
+        --color-button-secondary-focus: var(--color-secondary-600);
+        --color-button-secondary-hover: var(--color-secondary-600);
+        --color-button-secondary-active: var(--color-secondary-600);
+        --color-button-secondary-visited: var(--color-secondary-600);
+
+        --color-button-tertiary-resting: var(--color-tertiary);
+        --color-button-tertiary-focus: var(--color-tertiary-600);
+        --color-button-tertiary-hover: var(--color-tertiary-600);
+        --color-button-tertiary-active: var(--color-tertiary-600);
+        --color-button-tertiary-visited: var(--color-tertiary-600);
+    }
+}

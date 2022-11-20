@@ -1,0 +1,15 @@
+%button {
+    @include center-content();
+    @include layout-fit-min(var(--button-w-md), var(--button-h-md));
+    padding: var(--padding-xs);
+    cursor: pointer;
+
+    @include background-order-state;
+    @include order('actions') {
+        @extend %button
+    };
+}
+
+// @extend %button--primary;
+// @extend %button--secondary;
+// @extend %button--tertiary;

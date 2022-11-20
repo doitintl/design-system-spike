@@ -1,0 +1,43 @@
+.__ {
+    &area {
+        @extend %dragdrop__area;
+
+        &__legend {
+            @extend %dragdrop__area__legend;
+        }
+    }
+
+    &item {
+        @extend %dragdrop__item;
+    }
+
+    &edit {
+        @extend %dragdrop__edit;
+    }
+
+    &delete {
+        @extend %dragdrop__delete;
+    }
+
+    &group {
+        @extend %dragdrop__group;
+
+        &__legend {
+            @extend %dragdrop__group__legend;
+        }
+    }
+
+    &operator {
+        &--or {
+            @extend %dragdrop__operator--or;
+        }
+
+        &--and {
+            @extend %dragdrop__operator--and;
+        }
+    }
+
+    &field {
+        @extend %dragdrop__field;
+    }
+}
